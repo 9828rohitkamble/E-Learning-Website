@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>C</title>
+    <style >
+    </style>
+</head>
+<body>
+    <img src="c.jpg" width=200,height=200>
+    <h1><mark> C PROGRANING INFORMATION </mark></h1>
+    <P> C (pronounced /si/  like the letter c)[6] is a general-purpose computer programming language. It was created in the 1970s by Dennis Ritchie, and remains very widely used and influential. By design, C's features cleanly reflect the capabilities of the targeted CPUs. It has found lasting use in operating systems, device drivers, protocol stacks, though decreasingly[7] for application software. C is commonly used on computer architectures that range from the largest supercomputers to the smallest microcontrollers and embedded systems.
+        A successor to the programming language B, C was originally developed at Bell Labs by Ritchie between 1972 and 1973 to construct utilities running on Unix. It was applied to re-implementing the kernel of the Unix operating system.[8] During the 1980s, C gradually gained popularity. It has become one of the most widely used programming languages,[9][10] with C compilers available for practically all modern computer architectures and operating systems.
+         The book The C Programming Language, co-authored by the original language designer, served for many years as the de facto standard for the language.[11]
+        [12] C has been standardized by ANSI since 1989 (ANSI C) and by the International Organization for Standardization (ISO).
+        C is an imperative procedural language, supporting structured programming, lexical variable scope and recursion, with a static type system. It was designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support. Despite its low-level capabilities, the language was designed to encourage cross-platform programming.
+         A standards-compliant C program written with portability in mind can be compiled for a wide variety of computer platforms and operating systems with few changes to its source code.[13]
+        Since 2000, C has consistently ranked among the top two languages in the TIOBE index, a measure of the popularity of programming languages.[14]</P>
+        <h2> <mark> HISTORY</mark></h2>]
+        <p> he origin of C is closely tied to the development of the Unix operating system, originally implemented in assembly language on a PDP-7 by Dennis Ritchie and Ken Thompson, incorporating several ideas from colleagues. Eventually, they decided to port the operating system to a PDP-11. The original PDP-11 version of Unix was also developed in assembly language.[8]
+
+            B
+            Main article: B (programming language)
+            Thompson wanted a programming language for developing utilities for the new platform. At first, he tried to write a Fortran compiler, but soon gave up the idea. Instead, he created a cut-down version of the recently developed BCPL systems programming language. The official description of BCPL was not available at the time[15] and Thompson modified the syntax to be less wordy, and similar to a simplified ALGOL known as SMALGOL.[16] Thompson called the result B.[8] He described B as "BCPL semantics with a lot of SMALGOL syntax".[16] Like BCPL, B had a bootstrapping compiler to facilitate porting to new machines.[16] However, 
+            few utilities were ultimately written in B because it was too slow, and could not take advantage of PDP-11 features such as byte addressability.
+            In 1971, Ritchie started to improve B, to utilise the features of the more-powerful PDP-11. A significant addition was a character data type. He called this New B (NB).[16] Thompson started to use NB to write the Unix kernel, and his requirements shaped the direction of the language development.[16][17] Through to 1972, richer types were added to the NB language: NB had arrays of int and char. Pointers, the ability to generate pointers to other types, arrays of all types, and types to be returned from functions were all also added. Arrays within expressions became pointers. A new compiler was written, and the language was renamed C.[8]
+            The C compiler and some utilities made with it were included in Version 2 Unix, which is also known as Research Unix.[18]
+            Structures and the Unix kernel re-write
+            At Version 4 Unix, released in November 1973, the Unix kernel was extensively re-implemented in C.[8] By this time, the C language had acquired some powerful features such as struct types.
+            The preprocessor was introduced around 1973 at the urging of Alan Snyder and also in recognition of the usefulness of the file-inclusion mechanisms available in BCPL and PL/I. Its original version provided only included files and simple string replacements: #include and #define of parameterless macros. Soon after that, it was extended, mostly by Mike Lesk and then by John Reiser, to incorporate macros with arguments and conditional compilation.[8]
+            Unix was one of the first operating system kernels implemented in a language other than assembly. Earlier instances include the Multics system (which was written in PL/I) and Master Control Program (MCP) for the Burroughs B5000 (which was written in ALGOL) in 1961. In around 1977, Ritchie and Stephen C. Johnson made further changes to the language to facilitate portability of the Unix operating system. Johnson's Portable C Compiler served as the basis for several implementations of C on new platforms.[17]</p>
+            <h3> <mark> PROGRAM</mark></h3>
+            <p> long some_function(); /* This is a function declaration, so the compiler can know the name and return type of this function. */
+                /* int / other_function(); / Another function declaration.  Because this is an early version of C, there is an implicit 'int' type here.  A comment shows where the explicit 'int' type specifier would be required in later versions. */
+                
+                /* int / calling_function() / This is a function definition, including the body of the code following in the { curly brackets }. Because no return type is specified, the function implicitly returns an 'int' in this early version of C. */
+                {
+                    long test1;
+                    register /* int / test2; / Again, note that 'int' is not required here. The 'int' type specifier */
+                                              /* in the comment would be required in later versions of C. */
+                                              /* The 'register' keyword indicates to the compiler that this variable should */
+                                              /* ideally be stored in a register as opposed to within the stack frame. */
+                    test1 = some_function();
+                    if (test1 > 1)
+                          test2 = 0;
+                    else
+                          test2 = other_function();
+                    return test2;
+                }</p>
+            </body>
